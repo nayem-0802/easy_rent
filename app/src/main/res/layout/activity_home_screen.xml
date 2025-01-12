@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_view_color"
+    tools:context=".HomeScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/text_view_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/main_color"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:gravity="center"
+            android:text="Easy Rent"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="10dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/location" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1.5"
+                android:background="@color/white"
+                android:textAlignment="viewStart"
+                tools:ignore="TouchTargetSizeCheck" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/location_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:fontFamily="@font/nunito_sans"-->
+<!--                android:text="Sylhet"-->
+<!--                android:textColor="@color/home_text"-->
+<!--                android:textSize="18sp" />-->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="10dp"
+                android:layout_height="25dp"
+                android:layout_weight="0.7"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/tag" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Category"
+                android:textColor="@color/home_text"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/filter_icon"
+                android:layout_width="10dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/filter" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.91" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/navigation_shape"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+            <ImageView
+                android:id="@+id/home_color"
+                android:layout_width="10dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/home_color" />
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/search_new" />
+
+            <ImageView
+                android:id="@+id/add_icon"
+                android:layout_width="20dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/add_color" />
+
+            <ImageView
+                android:id="@+id/chat_icon"
+                android:layout_width="10dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/chat__1_" />
+
+            <ImageView
+                android:id="@+id/profile_icon_black"
+                android:layout_width="10dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/user_black" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/house1"
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/house1" />
+
+                    <TextView
+                        android:id="@+id/add_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="Post Title Here"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/add_title_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="Room counts"
+                        android:textColor="@color/home_text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/add_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="@string/price_location"
+                        android:textColor="@color/home_text"
+                        android:textSize="18sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/house2"
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/house1" />
+
+                    <TextView
+                        android:id="@+id/add2_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="Post Title Here"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/add2_title_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="Room counts"
+                        android:textColor="@color/home_text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/add2_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="@string/price_location"
+                        android:textColor="@color/home_text"
+                        android:textSize="18sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/house3"
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/house1" />
+
+                    <TextView
+                        android:id="@+id/add3_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="Post Title Here"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/add3_title_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="Room counts"
+                        android:textColor="@color/home_text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/add3_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="@string/price_location"
+                        android:textColor="@color/home_text"
+                        android:textSize="18sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <ImageView
+                        android:id="@+id/house4"
+                        android:layout_width="1in"
+                        android:layout_height="1in"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/house1" />
+
+                    <TextView
+                        android:id="@+id/add4_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="Post Title Here"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/add4_title_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="Room counts"
+                        android:textColor="@color/home_text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/add4_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center"
+                        android:paddingLeft="1.2in"
+                        android:text="@string/price_location"
+                        android:textColor="@color/home_text"
+                        android:textSize="18sp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

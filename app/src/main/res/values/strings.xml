@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Easy Rent</string>
+    <string name="welcomr_to">Welcome to\nEasy Rent</string>
+    <string name="create_new_account">Create new\nAccount</string>
+    <string name="price_location">PRICE\nlocation</string>
+    <string name="this_feature_is_not_available_right_now">This feature is not available right now.\nWe will update it very soon.</string>
+</resources>

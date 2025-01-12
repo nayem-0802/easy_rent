@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_view_color">#E5E5E5</color>
+    <color name="main_color">#005167</color>
+    <color name="link_color">#0021D1</color>
+    <color name="hint_color">#888888</color>
+    <color name="splash_color">#CBE2EF</color>
+    <color name="red">#FF1212</color>
+    <color name="home_text">#3F3F3F</color>
+    FF792E<color name="ok_button">#FF792E</color>
+
+</resources>
